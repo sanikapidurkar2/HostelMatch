@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HostelMatch Admin – Mumbai Hostel Directory Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F172A;--paper:#F8FAFC;--card:#fff;--teal:#0D9488;--amber:#F59E0B;--red:#EF4444;--line:#E2E8F0;--mute:#64748B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:15px/1.5 'Plus Jakarta Sans',system-ui,sans-serif}
+header{background:var(--ink);color:#fff;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:1.4rem;font-weight:800;font-family:'Space Grotesk',sans-serif}
+header a{color:#94A3B8;text-decoration:none;font-weight:600;font-size:0.9rem}
+header a:hover{color:#fff}
+.wrap{max-width:1200px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:420px 1fr;gap:24px}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05)}
+h2{margin-bottom:16px;font-size:1.2rem;font-weight:800}
+label{display:block;font-weight:700;margin:10px 0 4px;font-size:.82rem;color:var(--ink);text-transform:uppercase;letter-spacing:0.03em}
+input[type=text],input[type=number],input[type=password],input[type=tel],input[type=url],textarea,select{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#F8FAFC;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--teal);background:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chips label{position:relative;margin:0;text-transform:none}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:4px 10px;border:1px solid var(--line);border-radius:99px;cursor:pointer;font-size:.8rem;font-weight:600;background:#F8FAFC}
+.chips input:checked+span{background:var(--teal);border-color:var(--teal);color:#fff}
+.btn{background:var(--ink);color:#fff;border:0;border-radius:8px;padding:11px 16px;font-weight:700;font-size:0.92rem;width:100%;margin-top:16px;cursor:pointer}
+.btn:hover{background:#1E293B}
+.btn-danger{background:var(--red)}
+.h-item{display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:#F8FAFC}
+.h-item strong{font-size:0.95rem;color:var(--ink)}
+.h-item small{color:var(--mute);font-size:0.8rem;display:block;margin-top:2px}
+.msg{padding:10px 14px;border-radius:8px;margin-bottom:12px;font-size:.88rem;display:none;font-weight:600}
+.msg.err{background:#FEE2E2;color:var(--red)}.msg.ok{background:#D1FAE5;color:var(--teal)}
+</style>
+</head>
+<body>
+<header>
+ <div>
+  <h1>HostelMatch Admin</h1>
+  <div style="font-size:0.75rem;color:#94A3B8">Real-time Mumbai Hostels Directory Editor</div>
+ </div>
+ <a href="/">← Back to Main App</a>
