@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hostelmatch
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: ADMIN_KEY
+        generateValue: true
+      - key: CAMPUS_LAT
+        value: "19.0760"
+      - key: CAMPUS_LNG
+        value: "72.8777"
